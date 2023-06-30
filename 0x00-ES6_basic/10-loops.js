@@ -1,11 +1,8 @@
-export default class Car {
-  construcor(brand, motor, color) {
-    this._brand = brand;
-    this._motor = motor;
-    this._volor = color;
+export default function appendToEachArrayValue(array, appendString) {
+  const arrayEnd = []
+  for (const idx of array) {
+    arrayEnd.push(`${appendString}${idx}`);
   }
 
-  cloneCar() {
-    return new this.constructor(this._brand, this._notor, this._color);
-  }
+  return arrayEnd;
 }
