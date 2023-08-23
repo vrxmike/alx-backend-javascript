@@ -1,7 +1,7 @@
 const http = require('http');
-const { readfile ) = require('fs');
+const { readfile } = require('fs');
 
-const hostname = '127.0.01';
+const hostname = '127.0.0.1';
 const port = 1245;
 
 function countStudents(fileName) {
@@ -16,7 +16,7 @@ function countStudents(fileName) {
 	let output = '';
 	const lines = data.toString().split('\n');
 	for (let i = 0; i < lines.length; i += 1) {
-	  if (lines[i]0 {
+	  if (lines[i]) {
 	    length += 1;
 	    const field = lines[i].toString().split(',');
 	    if (Object.prototype.hasOwnProperty.call(students, field[3])) {
@@ -49,7 +49,7 @@ const app = http.createServer((request, response) => {
   response.statusCode = 200;
   response.setHeader('Content-Type', 'text/plain');
   if (request.url === '/') {
-    response.write('Hello Holberton Schol!');
+    response.write('Hello Holberton School!');
     response.end();
   }
   if (request.url === '/students') {
