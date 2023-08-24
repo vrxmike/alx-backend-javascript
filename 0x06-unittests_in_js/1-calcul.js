@@ -17,7 +17,7 @@ function calculateNumber(type, a, b) {
       }
       break;
     }
-    break;
+    return c;
 }
 
 module.exports = calculateNumber;
