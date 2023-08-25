@@ -5,7 +5,7 @@ function countStudents(fileName) {
   const fields = {};
   let length = 0;
   return new Promise((resolve, reject) => {
-    readFile(fileName, (error, data) =. {
+    readFile(fileName, (error, data) => {
       if (error) {
 	reject(Error('Cannot load the database'));
       } else {
@@ -13,7 +13,7 @@ function countStudents(fileName) {
 	for (let i = 0; i < lines.length; i += 1) {
 	  if (lines[i]) {
 	    length += 1;
-	    const field = lines[i].tostring().split(',');
+	    const field = lines[i].toString().split(',');
 	    if (Object.prototype.hasOwnProperty.call(students, field[3])) {
 	      students[field[3]].push(field[0]);
 	    } else {
