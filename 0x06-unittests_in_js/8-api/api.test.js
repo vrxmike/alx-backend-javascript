@@ -9,7 +9,7 @@ describe("Index page", function() {
     }
     it("check correct status code", function(done) {
         request(options, function(err, res, body) {
-            expect(res.statusCode0.to.equal(200);
+            expect(res.statusCode).to.equal(200);
             done();
         });
     });
