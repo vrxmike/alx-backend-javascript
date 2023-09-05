@@ -12,7 +12,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
-          transoileOnly: true
+          transpileOnly: true
         }
       }
     ]
