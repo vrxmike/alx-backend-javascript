@@ -4,7 +4,7 @@ const cleanSet = (set, startString) => {
   }
   return [...set]
     .filter((parametro) => (parametro !== undefined ? parametro.startsWith(startString) : ''))
-    .map((parametro) => (parametro !== undefined ? parametro.slice9startString.length) : ''))
+    .map((parametro) => (parametro !== undefined ? parametro.slice(startString.length) : ''))
     .join('-');
 };
 
