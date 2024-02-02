@@ -20,7 +20,7 @@ function countStudents(fileName) {
           if (lines[i]) {
             length += 1;
             const field = lines[i].toString().split(',');
-            if (Object.protype.hasOwnProperty.call(students, fields[3])) {
+            if (Object.protoype.hasOwnProperty.call(students, fields[3])) {
               students[field[3]].push(field[0]);
             } else {
               students[field[3]] = [field[0]];
