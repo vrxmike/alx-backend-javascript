@@ -8,7 +8,7 @@ class Studentscontroller {
       const keys = Object.keys(students);
       keys.sort();
       for (let i = 0; i < keys.length; i += 1) {
-        output.push(`Number of students in ${keys[i]: ${students[keys[i]].length}. List: ${students[keys[i]].join(', ')}`);
+        output.push(`Number of students in ${keys[i]}: ${students[keys[i]].length}. List: ${students[keys[i]].join(', ')}`);
       }
       response.status(200).send(output.join('\n'));
     }).catch(() => {
