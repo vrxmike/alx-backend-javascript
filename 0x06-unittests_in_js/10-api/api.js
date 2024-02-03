@@ -29,7 +29,7 @@ app.post('/login', (request, response) => {
     if (userName) {
         response.send(`Welcome ${userName}`);
     } else {
-        respone.status(404).send();
+        response.status(404).send();
     }
 });
 

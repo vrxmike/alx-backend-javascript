@@ -30,7 +30,7 @@ describe("Cart page", function() {
     });
     it("check correct content for current url", function(done) {
         request.get("http://localhost:7865/cart/12", function(err, res, body) {
-            expect(body).to.contain("Payment methods for cart 12");
+            expect(body).to.equal("Payment methods for cart 12");
             done();
         });
     });
@@ -102,14 +102,14 @@ describe("Login", function() {
         });
     });
     it("check correct status code for request that's not sent properly", function(done) {
-        const op = {
+        const opts = {
             url: "http://localhost:7865/login",
             json: true,
             body: {
                 usame: 'JOE'
             }
         };
-        request.post(op, function(err, res, body) {
+        request.post(opts, function(err, res, body) {
             expect(res.statusCode).to.equal(404);
             done();
         });
