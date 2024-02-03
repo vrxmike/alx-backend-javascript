@@ -15,8 +15,8 @@ app.get('/cart/:id([0-9]+)', (request, response) => {
 
 app.get('/available_payments', (request, response) => {
     response.set("Content-Type", "application/json");
-    count payMethods = {
-        payment_methods = {
+    const payMethods = {
+        payment_methods: {
           credit_cards: true,
           paypal: false
         }
