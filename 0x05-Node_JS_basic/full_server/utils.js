@@ -12,7 +12,7 @@ module.exports = function readDatabase(filePath) {
         for (let i = 0; i < noHeader.length; i += 1) {
           if (noHeader[i]) {
             const field = noHeader[i].toString().split(',');
-            if (Object.protype.hasOwnProperty.call(students, field[3])) {
+            if (Object.prototype.hasOwnProperty.call(students, field[3])) {
               students[field[3]].push(field[0]);
             } else {
               students[field[3]] = [field[0]];
