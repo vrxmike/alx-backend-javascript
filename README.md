@@ -45,7 +45,7 @@ Each module typically contains:
 
 To run specific exercises:
 ```bash
-node path/to/exercise.js
+npm run dev path/to/exercise.js
 ```
 
 To run tests (if configured):
