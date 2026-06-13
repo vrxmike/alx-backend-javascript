@@ -1,1 +1,1 @@
-This repository contains projects on alx-backend-javascript
+This repository contains detailed projects on alx-backend-javascript
